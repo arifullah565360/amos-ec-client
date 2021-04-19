@@ -13,18 +13,21 @@ const Subject = () => {
     }, [])
 
     return (
-        <div className="subject">
-            <div className="text-center mt-3 my-5 py-5">
+        <section>
+            <div className="text-center mt-3 my-3 py-5">
                 <h4 style={{ color: '#1cc7c1' }}>Subject</h4>
                 <h1 className="mt-3">Choose Your Favourite Subject</h1>
             </div>
-
-            <div className="d-flex justify-content-center">
-                {
-                    subject.map(Sub => <SubjectCard Subject={Sub}></SubjectCard>)
-                }
+            <div className="container">
+                <div className="">
+                    <div className="row">
+                        {
+                            subject.map(Sub => <SubjectCard Subject={Sub}></SubjectCard>)
+                        }
+                    </div>
+                </div>
             </div>
-        </div>
+        </section>
     );
 };
 

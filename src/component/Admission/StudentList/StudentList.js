@@ -4,16 +4,18 @@ const StudentList = (props) => {
     const { firstName, gender, number } = props.student
     return (
         <div>
+            <table class="table">
             <tbody>
                 <tr>
-                    <th scope="row">1</th>
-                    <td> <h1>{firstName}</h1></td>
-                    <td><h2>{gender}</h2></td>
-                    <td><h3>{number}</h3></td>
+                   
+                    <td> <h3>{firstName}</h3></td>
+                    <td><h4>{number}</h4></td>
+                    <td><h4>{gender}</h4></td>
+                  
                 </tr>
 
             </tbody>
-
+            </table>
            
             
             

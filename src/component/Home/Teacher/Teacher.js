@@ -25,17 +25,22 @@ const teacherData = [
 
 const Teacher = () => {
     return (
-        <div className="SubjectCard">
-            <div className="text-center mt-3 my-5">
-                <h4 style={{ color: '#1cc7c1' }}>Teachers</h4>
-                <h1 className="mt-3"> Our Best Theacher </h1>
+        <section>
+            <div className="text-center mt-3 my-3 py-5">
+                <h4 style={{ color: '#1cc7c1' }}>Teacher</h4>
+                <h1 className="mt-3">Our Best Teacher</h1>
             </div>
-            <div className="d-flex justify-content-center">
-                {
-                    teacherData.map(teacher => <TeacherCard teacher={teacher}></TeacherCard>)
-                }
+            <div className="container">
+                <div className="">
+                    <div className="row">
+                        {
+                            teacherData.map(teacher => <TeacherCard teacher={teacher}></TeacherCard>)
+                        }
+                    </div>
+                </div>
             </div>
-        </div>
+
+        </section>
     );
 };
 

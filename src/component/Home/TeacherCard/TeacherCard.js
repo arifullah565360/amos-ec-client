@@ -3,8 +3,8 @@ import React from 'react';
 const TeacherCard = (props) => {
     const { name, image, description } = props.teacher
     return (
-        <div>
-            <div className="card text-center ms-5 w-75">
+      
+             <div className="col-md-4 col-sm-6 text-center card">
 
                 <div className="text-center">
                     <img style={{ height: "100px" }} className="mx-3" src={image} alt="" />
@@ -21,7 +21,7 @@ const TeacherCard = (props) => {
                 </div>
 
 
-            </div>
+     
     );
 };
 

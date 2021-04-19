@@ -3,8 +3,8 @@ import React from 'react';
 const Review = (props) => {
     const { imgUrl, firstName, comment } = props.rev
     return (
-        <div>
-            <div className="card text-center ms-5 w-75">
+    
+            <div style={{marginLeft:"120px"}} className="col-md-4 mt-5 col-sm-6 text-center card">
 
                 <div className="text-center">
                     <img style={{ height: "100px" }} className="mx-3" src={imgUrl} alt="" />
@@ -21,7 +21,6 @@ const Review = (props) => {
             </div>
 
 
-        </div>
     );
 };
 

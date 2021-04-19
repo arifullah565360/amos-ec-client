@@ -1,19 +1,20 @@
 import React from 'react';
 
 const ListStudentCard = (props) => {
-    const { firstName, created , number } = props.student
+    const { firstName, gender, number } = props.student
     return (
         <div>
             <table class="table">
-            <tbody>
-                <tr>
-                  
-                    <td>{firstName}</td>
-                    <td>{number}</td>
-                    <td>{created}</td>
-                </tr>
+                <tbody>
+                    <tr>
+                        
+                        <td> <h3>{firstName}</h3></td>
+                        <td><h4>{number}</h4></td>
+                        <td><h4>{gender}</h4></td>
 
-            </tbody>
+                    </tr>
+
+                </tbody>
             </table>
         </div>
     );

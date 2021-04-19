@@ -6,8 +6,7 @@ const SubjectCard = (props) => {
     const { subject, imgUrl, content,price } = props.Subject
 
     return (
-        <div className="SubjectCard">
-            <div className="text-center">
+        <div style={{marginLeft:"120px"}} className="col-md-4 mt-5 col-sm-6 text-center card">
                 <div className="text-center">
                     <img style={{ height: "100px" }} className="mx-3" src={imgUrl} alt="" />
 
@@ -23,8 +22,8 @@ const SubjectCard = (props) => {
                 </div>
 
             <Link to="/admission"><button className="enrollBtn ">Enroll Now</button></Link>    
-            </div>
-        </div>
+           
+       </div>
     );
 };
 

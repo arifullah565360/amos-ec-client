@@ -31,17 +31,20 @@ const OpportunityBenefitInfo = [
 const OpportunityBenefit = () => {
     return (
         <section>
-            <div className="text-center mt-3 my-5 py-5">
+            <div className=" mt-3 my-3 py-5">
                 <h4 style={{ color: '#1cc7c1' }}>Opportunity Benefit</h4>
                 <h1 className="mt-3">From Our Opportunity Benefit</h1>
             </div>
 
-            <div className="row">
-                <div className="d-flex justify-content-center ">
+
+            <div className="container">
+            <div className="">
+                <div className="row">
                     {
-                        OpportunityBenefitInfo.map(data => <OpportunityBenefitCard data={data} ></OpportunityBenefitCard>)
+                      OpportunityBenefitInfo.map(data => <OpportunityBenefitCard data={data} ></OpportunityBenefitCard>)
                     }
                 </div>
+            </div>
             </div>
 
         </section>

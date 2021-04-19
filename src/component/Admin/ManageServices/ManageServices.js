@@ -1,10 +1,10 @@
-import {useState, useEffect} from 'react';
+import { useState, useEffect } from 'react';
 import AdminSidebar from '../AdminSidebar/AdminSidebar';
 import Delete from '../Delete/Delete'
 
 
 const ManageServices = () => {
-    const [ subject , setSubject] = useState([])
+    const [subject, setSubject] = useState([])
     useEffect(() => {
         fetch('https://evening-plains-79635.herokuapp.com/subject')
             .then(res => res.json())
@@ -19,18 +19,18 @@ const ManageServices = () => {
             </div>
             <div className="col-md-9 bg-light">
                 <h1>Manages Servicesss</h1>
-                <table style={{width:"730px"}} class="table table-dark">
-                <thead>
+                <table style={{ width: "730px" }} class="table table-dark">
+                    <thead>
                         <tr>
                             <th scope="col"> <h4>Name</h4></th>
                         </tr>
                     </thead>
                 </table>
                 <div>
-                {
-                subject.map(sub => <Delete subject={sub}></Delete> )
-                }
-            </div>
+                    {
+                        subject.map(sub => <Delete subject={sub}></Delete>)
+                    }
+                </div>
 
 
             </div>

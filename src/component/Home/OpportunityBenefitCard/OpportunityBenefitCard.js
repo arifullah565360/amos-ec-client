@@ -2,10 +2,10 @@ import React from 'react';
 import './OpportunityBenefitCard.css'
 
 const OpportunityBenefitCard = (props) => {
-    const { name, image, country, description } = props.data;
+    const { name, image, description } = props.data;
     return (
-        <div>
-            <div className="card text-center ms-5 w-75">
+        
+            <div className="col-md-4 col-sm-6 text-center card">
 
                 <div className="text-center">
                     <img style={{ height: "100px" }} className="mx-3" src={image} alt="" />
@@ -17,11 +17,11 @@ const OpportunityBenefitCard = (props) => {
                 </div>
 
                 <div className="card-body">
-                    <p className="card-text text-center">{description}</p>
+                    <p className="card-text">{description}</p>
                 </div>
 
             </div>
-        </div>
+       
     );
 };
 
